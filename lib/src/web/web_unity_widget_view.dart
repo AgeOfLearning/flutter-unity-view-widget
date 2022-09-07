@@ -30,7 +30,7 @@ class _WebUnityWidgetViewState extends State<WebUnityWidgetView> {
   @override
   Widget build(BuildContext context) {
     var path = Uri.base.path == '/' ? '' : Uri.base.path;
-    var pathConnector = Uri.base.path.endsWith('/') ? '' : '/';
+    var pathConnector = path.endsWith('/') ? '' : '/';
     print('Uri.base.origin ${Uri.base.origin}');
     print('Uri.base.path ${Uri.base.path}');
     print('path $path');
